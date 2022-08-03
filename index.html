@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bazar</title>
+    <link rel="stylesheet" href="desktop.css" />
+    <link
+      rel="stylesheet"
+      href="tablet.css"
+      media="screen and (min-width: 468px)"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="section-contacto">
+        <figure class="figure-contacto">
+            <img src="img/phone.png" alt="Telefono"/>
+            <figcaption class="figcaption-contacto">+88012 3456 7895</figcaption>
+        </figure>
+
+        <figure class="figure-contacto">
+            <img src="img/message.png" alt="Mensajes" />
+            <figcaption class="figcaption-contacto">support@ui-lib.com</figcaption>
+        </figure>
+      </section>
+
+      <section class="section-nav">
+        <nav class="nav-header">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="">Theme FAQ"s</a>
+            </li>
+            <li>
+              <a href="">Need help?</a>
+            </li>
+            <li>
+              <select class="select-nav">
+                <option value="ENG">EN</option>
+              </select>
+            </li>
+            <li>
+              <select class="select-nav">
+                <option value="USD">USD</option>
+              </select>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <!-- <main>
+      <section class="sect-main-search separacion-lr">
+          <h2 class="logo">bazar</h2>
+          <div class="main-input">
+              <div class="main-input-container">
+                  <div class="search-icon"></div>
+                  <input type="text">
+                  <button>Search</button>
+              </div>
+          </div>
+          <div class="icon-user-buy">
+            <a href="#"><img src="img/icon-usuario.png" alt="Usuario"></a>
+            <a href="#"><img src="img/icon-compra.png" alt="Comprar"></a>
+          </div>
+
+          <div class="div-categoria">
+            <img src="img/icon-Categoria.png" alt="cuadrado">
+            <select class="select-nav-categoria">
+              <option value="Categorias">Categorias</option>
+            </select>
+          </div>
+
+          <nav class="nav-main">
+            <ul class="nav-ul-select">
+              <li>
+                <select class="select-nav-home">
+                  <option value="Home">Home</option>
+                </select>
+              </li>
+              <li>
+                <select class="select-nav-menu">
+                  <option value="Mega Menu">Mega Menu</option>
+                </select>
+              </li>
+              <li>
+                <select class="select-nav-screen">
+                  <option value="Full Screen Menu">Full Screen Menu</option>
+                </select>
+              </li>
+              <li>
+                <select class="select-nav-page">
+                  <option value="Page">Page</option>
+                </select>
+              </li>
+              <li>
+                <select class="select-nav-user">
+                  <option value="User Account">User Account</option>
+                </select>
+              </li>
+              <li>
+                <select class="select-nav-vendedor">
+                  <option value="Vendor Account">Vendor Account</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+      </section>
+
+      <section class="sect-mural">
+        <h1>Delivering Medicine to your Doorstep Within 30 Minutes</h1>
+        <button>Shop Now</button>
+        <img src="img/img-mural.jpg" alt="Rick y Morty">
+      </section>
+
+      <aside class="aside-lista">
+        <ul class="aside-categorias">
+          <li class="background-azulClaro">
+            Categories
+          </li>
+          <li>
+            <img src="img/icon-home.png" alt="">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <img src="img/icon-popularProducts.png" alt="">
+            <a href="#">Popular Products</a>
+          </li>
+          <li>
+            <img src="img/icon-treding.png" alt="">
+            <a href="#">Trending Products</a>
+          </li>
+          <li>
+            <img src="img/icon-allProducts.png" alt="">
+            <a href="#">All Products</a>
+          </li>
+          <li>
+            <img src="img/icon-healthBeauty.png" alt="">
+            <select>
+              <option value="Health and beauty">Health and beauty</option>
+            </select>
+          </li>
+          <li>
+            <img src="img/icon-mascara.png" alt="">
+            <select>
+              <option value="Mascara">Mascara</option>
+            </select>
+          </li>
+          <li>
+            <img src="img/icon-powder.png" alt="">
+            <select>
+              <option value="Powder">Powder</option>
+            </select>
+          </li>
+          <li>
+            <img src="img/icon-lotion.png" alt="">
+            <select>
+              <option value="Lotion">Lotion</option>
+            </select>
+          </li>
+          <li>
+            <img src="img/icon-makeup.png" alt="">
+            <select>
+              <option value="Makeup">Makeup</option>
+            </select>
+          </li>
+          <li>
+            <img src="img/icon-lipstick.png" alt="">
+            <select>
+              <option value="Lipstick">Lipstick</option>
+            </select>
+          </li>
+          <li>
+            <img src="img/icon-faseMask.png" alt="">
+            <select>
+              <option value="Face Mask">Face Mask</option>
+            </select>
+          </li>
+          <li>
+            <img src="img/icon-digitalTermometro.png" alt="">
+            <a href="#">Digital Thermometer</a>
+          </li>
+          <li>
+            <img src="img/icon-oxygenPump.png" alt="">
+            <a href="#">Oxygen Pump</a>
+          </li>
+          <li>
+            <img src="img/icon-lenseCaseKit.png" alt="">
+            <a href="#">Lense Case Kit</a>
+          </li>
+          <li>
+            <img src="img/icon-automovite.png" alt="">
+            <a href="#">Automotive</a>
+          </li>
+        </ul>
+      </aside>
+
+      <section class="sect-articlesPromocionales">
+        <article class="arti-enfermera">
+          <div>
+            <img src="img/icon-salud.png" alt="Salud">
+            <p>Our Pharmaciests are here to Help People</p>
+          </div>
+          <img src="img/img-enfermera.png" alt="Enfermera">
+        </article>
+
+        <article class="arti-cremas">
+          <div>
+            <p>BEAUTY PACK</p>
+            <p><strong>CREAM BRIGHT UP TO 25%</strong></p>
+            <button>Shop Now</button>
+          </div>
+          <img src="img/img-cremasPack.png" alt="Cremas">
+        </article>
+      </section>
+
+      <section class="sect-ariclesProductos">
+        <div class="div-topProducts">
+            <div>
+              <h2>Top New Products</h3>
+              <p>Best deal with medical and beauty items</p>
+            </div>
+            <select class="selec-viewAll">
+              <option value="view">View All</option>
+            </select>
+        </div>
+
+        <article class="arti-productos producto1 marginCentrado">
+          <h4>8% off</h4>
+          <figure>
+            <img src="img/img-vichyLiftactiv1.png" alt="Crema Nivea">
+            <figcaption>Vichy Liftactiv Nuit Cream</figcaption>
+          </figure>
+          <img class="flechaL" src="img/icon-flechaL.png" alt="flecha">
+          <div class="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <p>(5.0)</p>
+          </div>
+          <p class="precio-venta">$173.88</p>
+          <p class="precio-tachado"><del>189.00</del></p>
+          <div class="div-button">
+            <button class="button-add">+ Add To Cart</button>
+            <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+          </div>
+        </article>
+
+        <article class="arti-productos producto2 marginCentrado">
+          <h4>9% off</h4>
+          <figure>
+            <img src="img/img-blueStethoscope.png" alt="Stethoscope">
+            <figcaption>Blue Stethoscope</figcaption>
+          </figure>
+          <div class="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella-gris.png" alt="rating-gris">
+            <img src="img/icon-estrella-gris.png" alt="rating-gris">
+            <p>(3.0)</p>
+          </div>
+          <p class="precio-venta">$150.15</p>
+          <p class="precio-tachado"><del>165.00</del></p>
+          <div class="div-button">
+            <button class="button-add">+ Add To Cart</button>
+            <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+          </div>
+        </article>
+
+        <article class="arti-productos producto3 marginCentrado">
+          <h4>12% off</h4>
+          <figure>
+            <img src="img/img-sphygmomanometer.png" alt="Sphygmomanometer">
+            <figcaption>Sphygmomanometer</figcaption>
+          </figure>
+          <img class="flechaR" src="img/icon-flechaR.png" alt="FlechaR">
+          <div class="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella-gris.png" alt="rating-gris">
+            <img src="img/icon-estrella-gris.png" alt="rating-gris">
+            <p>(3.0)</p>
+          </div>
+          <p class="precio-venta">$63.36</p>
+          <p class="precio-tachado"><del>72.00</del></p>
+          <div class="div-button">
+            <button class="button-add">+ Add To Cart</button>
+            <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+          </div>
+        </article>
+
+        <div class="div-topProducts2">
+          <div>
+            <h2>All Products</h3>
+            <p>Best deal with medical and beauty items</p>
+          </div>
+          <select class="selec-viewAll">
+            <option value="view">View All</option>
+          </select>
+        </div>
+
+        <article class="arti-productos producto4 marginCentrado">
+          <h4>8% off</h4>
+          <figure>
+            <img src="img/img-vichyLiftactivi2.png" alt="Vichy Liftactiv">
+            <figcaption>Vichy Liftactiv Nuit Cream</figcaption>
+          </figure>
+          <div class="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <p>(5.0)</p>
+          </div>
+          <p class="precio-venta">$211.60</p>
+          <p class="precio-tachado"><del>230.00</del></p>
+          <div class="div-button">
+            <button class="button-add">+ Add To Cart</button>
+            <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+          </div>
+        </article>
+
+        <article class="arti-productos producto5 marginCentrado">
+          <h4>6% off</h4>
+          <figure>
+            <img src="img/img-sphygmomanoter.png" alt="Sphygmomanometer">
+            <figcaption>Sphygmomanometer</figcaption>
+          </figure>
+          <div class="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <p>(5.0)</p>
+          </div>
+          <p class="precio-venta">$61.10</p>
+          <p class="precio-tachado"><del>65.00</del></p>
+          <div class="div-button">
+            <button class="button-add">+ Add To Cart</button>
+            <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+          </div>
+        </article>
+
+        <article class="arti-productos producto6 marginCentrado">
+          <h4>11% off</h4>
+          <figure>
+            <img src="img/img-freshStrawberry.png" alt="Fresh Strawberry">
+            <figcaption>Fresh Strawberry</figcaption>
+          </figure>
+          <div class="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella.png" alt="rating">
+            <img src="img/icon-estrella-gris.png" alt="rating-gris">
+            <img src="img/icon-estrella-gris.png" alt="rating-gris">
+            <p>(3.0)</p>
+          </div>
+          <p class="precio-venta">$161.09</p>
+          <p class="precio-tachado"><del>181.00</del></p>
+          <div class="div-button">
+            <button class="button-add">+ Add To Cart</button>
+            <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+          </div>
+        </article>
+
+        <section class="sect-buttonLoad">
+          <button>Load More...</button>
+        </section>
+
+        <section class="sect-atencionCliente marginCentrado">
+          <img src="img/icon-envios.png" alt="Envios">
+          <div>
+            <h3>Fast Delivery</h3>
+            <p>Start from $10 <br> centric approach</p>
+          </div>
+        </section>
+
+        <section class="sect-atencionCliente marginCentrado">
+          <img src="img/icon-seguros.png" alt="Seguro">
+          <div>
+            <h3>Pick Up</h3>
+            <p>Secure system <br> centric approach</p>
+          </div>
+        </section>
+
+        <section class="sect-atencionCliente marginCentrado">
+          <img src="img/icon-atencionCliente.png" alt="icon-Atencion al Cliente">
+          <div>
+            <h3>Only Support</h3>
+            <p>24/7 daily <br> centric approach</p>
+          </div>
+        </section>
+      </section>
+  </main> -->
+
+
+
+
+  <!-- <footer>
+    <section class="sect-bazarImg">
+      <h2>bazar</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Fuga labore nihil ipsam quia, fugit praesentium unde.
+        Voluptate, repellendus non. Atque earum porro nisi dolorem
+        corrupti.
+      </p>
+        <a href="#"><img src="img/img-playStore.png" alt="Play Store"></a>
+        <a href="#"><img src="img/img-appStore.png" alt="App Store"></a>
+    </section>
+
+
+    
+    <section class="sect-listaIcon">
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Track Your Order</a></li>
+        <li><a href="#">Corporate & Bulk Purchasing</a></li>
+        <li><a href="#">Returns & Refunds</a></li>
+      </ul>
+        <a href="#"><img src="img/icon-facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="img/icon-twiter.png" alt="Twiter"></a>
+        <a href="#"><img src="img/icon-youtube.png" alt="Youtube"></a>
+        <a href="#"><img src="img/icon-google.png" alt="Google"></a>
+        <a href="#"><img src="img/icon-instagram.png" alt="Instagram"></a>
+    </section>
+  </footer> -->
+  </body>
+</html>
