@@ -20,7 +20,7 @@ li{
 .padding-separacion-movile{
     padding: 0 5%;
 }
-/****** Header ******/
+/********************** Header **********************/
 
 header{
     background-color: #0F3460;
@@ -38,7 +38,7 @@ header a{
 
 /****** Seccion basar y nav *******/
 
-.nav-header, .section-contacto, .logo, .icon-user-buy, .div-categoria{
+.displey-none-movile{
     display: none;
 }
 
@@ -68,13 +68,13 @@ header a{
     font-weight: bold;
 }
 
-/*********** Main ***********/
+/********************** Main **********************/
 
 main{
     font-size: 1.6rem;
 }
 
-/** Seccion Search **/
+/***** Seccion Search *****/
 .sect-main-search{
     display: flex;
     align-items: center;
@@ -85,11 +85,11 @@ main{
     font-size: 3rem;
     font-family: cursive;
     color: #0F3460;
+    width: 20vw;
 }
 
 main .main-input-container{
     width: 80vw;
-    /* height: 40px; */
     border-radius: 100px;
     border: 1px solid #dfe1e5;
     display: flex;
@@ -128,7 +128,7 @@ main .main-input .search-icon{
     height: 40px;
 }
 
-/** Menu Hambrguesa **/
+/***** Menu Hambrguesa *****/
 
 .checkbtn{
     cursor: pointer;
@@ -145,10 +145,10 @@ main .main-input .search-icon{
     transition: all .3s;
 }
 .nav-menu ul li{
-    margin: 50px 0;
+    margin: 30px 0;
 }
 .nav-menu ul li select{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     outline: none;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -156,8 +156,12 @@ main .main-input .search-icon{
     background-color: #0F3460;
 }
 
+.nav-menu ul li select option{
+    font-size: 1.4rem;
+}
+
 .li-icons img{
-    width: 50px;
+    width: 40px;
 }
 
 #check:checked ~ ul{
@@ -168,12 +172,11 @@ main .main-input .search-icon{
     display: none;
 }
 
+
+/********************** Media Query **********************/
 /******* Media 768 *******/
 
 @media (min-width: 768px){
-    /* .padding-separacion-tablet{
-        padding: 10px 5%;
-    } */
 
     header{
         flex-direction: row;
@@ -194,13 +197,14 @@ main .main-input .search-icon{
         padding: 10px 10%;
     }
 
-    .nav-header-movile, .icon-menu, .checkbtn{
+    .displey-none-desktop{
         display: none;
     }
 
-    .nav-header, .section-contacto, .logo, .icon-user-buy{
+    .displey-flex-desktop{
         display: flex;
     }
+    
 
     .select-nav{
         color: white;
@@ -233,9 +237,50 @@ main .main-input .search-icon{
         height: 30px;
     }
 
+    .icon-user-buy{
+        width: 10vw;
+        justify-content: flex-end;
+    }
+
     /****** Main ******/
 
     main .main-input-container{
-        width: 60vw;
+        width: 50vw;
+    }
+
+    .select-nav-descktop{
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .nav-ul-desktop{
+        display: flex;
+        gap: 15px;
+    }
+
+    .nav-ul-desktop li select{
+        border: 0;
+        background: transparent;
+        outline: none;
+    }
+
+    .div-categoria select{
+        border: 0;
+        width: 140px;
+        outline: none;
+        background-color: transparent;
+    }
+
+    .div-categoria img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .div-categoria{
+        width: 190px;
+        background-color: #F6F9FC;
+        border-radius: 5px;
+        padding: 5px;
     }
 }

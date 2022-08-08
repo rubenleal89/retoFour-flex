@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="padding-separacion-movile padding-separacion-tablet padding-separacion-desktop">
-      <section class="section-contacto">
+      <section class="section-contacto displey-none-movile displey-flex-desktop">
         <figure class="figure-contacto">
             <img src="img/phone.png" alt="Telefono"/>
             <figcaption class="figcaption-contacto">+88012 3456 7895</figcaption>
@@ -22,7 +22,7 @@
       </section>
 
       <section class="section-nav">
-        <nav class="nav-header">
+        <nav class="nav-header displey-none-movile displey-flex-desktop">
           <ul>
             <li>
               <a href="#">Home</a>
@@ -47,7 +47,7 @@
         </nav>
       </section>
 
-      <section class="nav-header-movile">
+      <section class="nav-header-movile displey-none-desktop">
         <h2>basar</h2>
         <ul>
           <li>
@@ -66,7 +66,7 @@
 
     <main class="padding-separacion-movile padding-separacion-tablet padding-separacion-desktop">
       <section class="sect-main-search separacion-lr">
-        <h2 class="logo">bazar</h2>
+        <h2 class="logo displey-none-movile displey-flex-desktop">bazar</h2>
         <div class="main-input">
             <div class="main-input-container">
                 <div class="search-icon"></div>
@@ -74,24 +74,16 @@
                 <button>Search</button>
             </div>
         </div>
-        <div class="icon-user-buy">
+        <div class="icon-user-buy displey-none-movile displey-flex-desktop">
           <a href="#"><img src="img/icon-usuario.png" alt="Usuario"></a>
           <a href="#"><img src="img/icon-compra.png" alt="Comprar"></a>
         </div>
 
-
         <nav class="nav-menu">
           <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-            <img class="icon-menu" src="img/icon-menu.png" alt="Menu">
+          <label for="check" class="checkbtn displey-none-desktop">
+            <img class="icon-menu displey-none-desktop" src="img/icon-menu.png" alt="Menu">
           </label>
-
-            <div class="div-categoria">
-              <img src="img/icon-Categoria.png" alt="cuadrado">
-              <select class="select-nav-categoria">
-                <option value="Categorias">Categorias</option>
-              </select>
-            </div>
 
               <ul class="nav-ul-select">
                 <li class="li-icons">
@@ -136,6 +128,49 @@
               </ul>
           </nav>
         </section>
+
+        <section class="select-nav-descktop displey-none-movile displey-flex-desktop">
+          <div class="div-categoria displey-flex-desktop">
+            <img src="img/icon-Categoria.png" alt="cuadrado">
+            <select class="select-nav-categoria">
+              <option value="Categorias">Categorias</option>
+            </select>
+          </div>
+          <nav class="nav-search-desktop">
+            <ul class="nav-ul-desktop">
+              <li>
+                <select class="select-nav-home">
+                  <option value="Home">Home</option>
+                </select>
+              </li>
+              <li>
+                <select class="select-nav-menu">
+                  <option value="Mega Menu">Mega Menu</option>
+                </select>
+              </li>
+              <li>
+                <select class="select-nav-screen">
+                  <option value="Full Screen Menu">Full Screen Menu</option>
+                </select>
+              </li>
+              <li>
+                <select class="select-nav-page">
+                  <option value="Page">Page</option>
+                </select>
+              </li>
+              <li>
+                <select class="select-nav-user">
+                  <option value="User Account">User Account</option>
+                </select>
+              </li>
+              <li>
+                <select class="select-nav-vendedor">
+                  <option value="Vendor Account">Vendor Account</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+      </section>
 
       <!-- <section class="sect-mural">
         <h1>Delivering Medicine to your Doorstep Within 30 Minutes</h1>
