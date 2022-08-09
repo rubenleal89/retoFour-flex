@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 html{
     font-size: 62.5%;
@@ -172,11 +173,298 @@ main .main-input .search-icon{
     display: none;
 }
 
+/***** Seccion Mural *****/
 
-/********************** Media Query **********************/
-/******* Media 768 *******/
+.sect-mural{
+    display: flex;
+    background-color: #EFEFEF;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: center;
+}
+
+.sect-mural div{
+    text-align: center;
+}
+
+.sect-mural h1{
+    color: #2B3445;
+    font-size: 3rem;
+    width: 300px;
+}
+
+.sect-mural button{
+    width: 100px;
+    height: 30px;
+    background: #4E97FD;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+/***** Seccion Articulos 2/1 *****/
+
+.div-articlesPromocionales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.arti-enfermera{
+    width: 100%;
+    height: 216px;
+    max-width: 500px;
+    background-color: white;
+    border: 2px solid #F8F8F9;
+    border-radius: 20px;
+    display: flex;
+}
+
+.arti-enfermera div{
+    width: 50%;
+    background-color: #B8DEFE;
+    border-radius: 20px 100px 100px 20px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.arti-enfermera img{
+    width: 50%;
+    max-width: 180px;
+    margin: auto;
+}
+
+.arti-enfermera div img{
+    width: 40px;
+    height: 40px;
+    margin-top: 30%;
+}
+
+.arti-cremas{
+    width: 100%;
+    height: 216px;
+    max-width: 500px;
+    background-color: white;
+    border: 2px solid #F8F8F9;
+    border-radius: 20px;
+    display: flex;
+}
+
+.arti-cremas img{
+    width: 60%;
+    margin: auto;
+}
+
+.arti-cremas div{
+    margin: auto 20px;
+    line-height: 25px;
+}
+
+.arti-cremas div button{
+    background: #4E97FD;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+}
+
+/***** Seccion Articulos 2/2 *****/
+
+.div-top-all-products{
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0 10px;
+    margin: 20px 0;
+}
+
+.div-top-all-products div p{
+    font-size: 1.4rem;
+}
+
+.div-top-all-products select{
+    width: 100px;
+    height: 60px;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+}
+
+.div-top-products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.arti-productos{
+    position: relative;
+    background-color: white;
+    border: 2px solid #F9F9FB;
+    width: 45%;
+    max-width: 240px;
+    height: 430px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.arti-productos h4{
+    background-color: #4E97FD;
+    width: 50px;
+    padding: 5px;
+    border-radius: 0 15px 15px 0 ;
+    font-size: 1rem;
+    color: white;
+}
+
+.arti-productos figure{
+    text-align: center;
+}
+
+.arti-productos figure img{
+    width: 165px;
+    height: 165px;
+    margin: 45px 0;
+}
+
+.arti-productos figure figcaption{
+    width: 100%;
+}
+
+.rating img{
+    display: inline-block;
+    margin-top: 5px;
+    width: 15px;
+}
+
+.rating p{
+    display: inline-block;
+}
+
+.precio-venta, .precio-tachado{
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.precio-venta{
+    color:  #4E97FD;
+}
+
+.div-button button{
+    background-color: #4E97FD;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.div-button{
+    display: flex;
+}
+
+.button-corazon img{
+    width: 13px;
+    height: 13px;
+}
+
+.button-add{
+    width: 90%;
+    margin-right: 10px;
+}
+
+.arti-productos figure figcaption{
+    border-top: 1px solid black;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.flechaL{
+    position: absolute;
+    bottom: 160px;
+    left: -15px;
+    cursor: pointer;
+}
+
+.flechaR{
+    position: absolute;
+    bottom: 160px;
+    right: -15px;
+    cursor: pointer;
+}
+
+.div-all-products{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.arti-productos-movile{
+    width: 100%;
+    max-width: 550px;
+}
+
+.arti-productos-movile figure img{
+    margin: 45px 0;
+}
+
+/***** Call Center *****/
+
+.sect-buttonLoad{
+    display: flex;
+    justify-content: center;
+}
+
+.sect-buttonLoad button{
+    background-color: #4E97FD;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.sect-atencionCliente{
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border: 2px solid #F9F9FB;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.div-atencion-ayuda{
+    padding: 0 20px;
+}
+
+.sect-atencionCliente h3{
+    color: #4E97FD;
+}
+
+.sect-atencionCliente img{
+    width: 55px;
+    height: 55px;
+    margin: 5px;
+}
+
+
+/********************** Media Query 768**********************/
 
 @media (min-width: 768px){
+    .displey-flex-tablet{
+        display: flex;
+    }
 
     header{
         flex-direction: row;
@@ -188,9 +476,56 @@ main .main-input .search-icon{
     main .main-input-container{
         width: 83vw;
     }
+
+    /***** Seccion Mural *****/
+
+    .sect-mural{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sect-mural div{
+        text-align: start;
+    }
+
+    .sect-mural img{
+        width: 40%;
+    }
+
+    /***** Seccion Articulos 2/1 *****/
+
+    .arti-enfermera{
+        width: 46%;
+    }
+
+    .arti-cremas{
+        width: 46%;
+    }
+
+    /***** Seccion Articulos 2/2 *****/
+
+    .div-all-products{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .arti-productos-movile{
+        width: 45%;
+        margin: 5px auto;
+    }
+
+    .producto2{
+        display: block;
+    }
+
+    .sect-atencionCliente{
+        flex-direction: row;
+        text-align: left;
+    }
 }
 
-/******* Media 1024 *******/
+/********************** Media Query 1024**********************/
 
 @media (min-width: 1024px){
     .padding-separacion-desktop{
@@ -282,5 +617,78 @@ main .main-input .search-icon{
         background-color: #F6F9FC;
         border-radius: 5px;
         padding: 5px;
+    }
+
+    /***** Seccion Mural *****/
+
+    .sect-mural{
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    /***** Aside *****/
+
+    .aside-lista{
+        margin-top: 10px;
+        /* padding-left: 100px; */
+    }
+
+    .aside-lista ul li img{
+        width: 20px;
+        margin: 0 10px;
+    }
+
+    .aside-categorias li{
+        width: 250px;
+        height: 35px;
+        background-color: #F3f5f9;
+        display: flex;
+        border-radius: 5px;
+        margin-top: 5px;
+        align-items: center;
+    }
+
+    .aside-lista select{
+        outline: none;
+        border: 0;
+        background: transparent;
+        font-size: 1.6rem;
+    }
+
+    .aside-lista ul li a{
+        margin: auto 0;
+        color: black;
+    }
+
+    .aside-categorias .background-azulClaro{
+        background-color: #B8DEFE;
+        padding-left: 10px;
+    }
+    .aside-articles{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .arti-productos{
+        width: 33%;
+        max-width: 240px;
+        height: 430px;
+    }
+
+    .arti-productos figure img{
+        width: 170px;
+        height: 170px;
+        margin: 45px 0;
+    }
+
+    .sect-atencionCliente{
+        width: 33%;
+        margin: 0;
+    }
+
+    .div-atencion-ayuda{
+        display: flex;
+        gap: 10px;
     }
 }
