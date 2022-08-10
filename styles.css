@@ -670,6 +670,25 @@ main .main-input .search-icon{
         justify-content: space-between;
     }
 
+    /****** Articulos ******/
+
+    .div-top-products{
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+
+    .div-all-products{
+        justify-content: space-between;
+    }
+
+    .arti-productos{
+        margin: 0;
+    }
+
+    .div-articlesPromocionales{
+        justify-content: space-between;
+    }
+
     .arti-productos{
         width: 33%;
         max-width: 240px;
