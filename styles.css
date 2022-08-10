@@ -458,6 +458,52 @@ main .main-input .search-icon{
     margin: 5px;
 }
 
+/********************** Footer **********************/
+
+footer{
+    background-color: #183C92;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    margin: 80px 20px 5px 20px;
+    /* margin: 100px 100px 0 400px; */
+    border-radius: 10px;
+    padding: 40px;
+    color: white;
+}
+
+.sect-bazarImg{
+    margin: 20px;
+    line-height: 25px;
+}
+
+.sect-bazarImg img{
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.sect-listaIcon img{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.sect-bazarImg h2{
+    font-size: 4rem;
+    font-family: cursive;
+    margin-bottom: 15px;
+}
+
+.sect-listaIcon a{
+    color: white;
+}
+
+.sect-listaIcon{
+    margin: 20px;
+    line-height: 30px;
+}
+
 
 /********************** Media Query 768**********************/
 
@@ -522,6 +568,26 @@ main .main-input .search-icon{
     .sect-atencionCliente{
         flex-direction: row;
         text-align: left;
+    }
+
+    /****** Footer ******/
+
+    footer{
+        flex-direction: row;
+    }
+
+    .sect-bazarImg{
+        /* width: 50%; */
+        width: 55%;
+    }
+
+    .sect-listaIcon{
+        /* width: 50%; */
+        width: 45%;
+    }
+
+    .sect-bazarImg a{
+        display: block;
     }
 }
 
@@ -710,4 +776,24 @@ main .main-input .search-icon{
         display: flex;
         gap: 10px;
     }
+
+    /****** Footer ******/
+
+    footer{
+        margin: 100px 100px 5px 370px;
+    }
+
+    .sect-listaIcon{
+        margin: 60px 0 0 50px;
+    }
+
+    .sect-bazarImg{
+        margin: 20px 0;
+    }
+
+    .sect-bazarImg a{
+        display: inline;
+    }
+
+    
 }
