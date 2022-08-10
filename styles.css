@@ -135,12 +135,17 @@ main .main-input .search-icon{
     cursor: pointer;
 }
 
+.checkbtn img{
+    width: 40px;
+}
+
 .nav-menu ul{
+    z-index: 1;
     position: fixed;
     width: 100vw;
     height: 100vh;
     background: #0F3460;
-    top: 100px;
+    top: 0;
     left: -200%;
     text-align: center;
     transition: all .3s;
@@ -162,7 +167,7 @@ main .main-input .search-icon{
 }
 
 .li-icons img{
-    width: 40px;
+    width: 50px;
 }
 
 #check:checked ~ ul{
@@ -181,6 +186,7 @@ main .main-input .search-icon{
     padding-top: 40px;
     padding-bottom: 40px;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .sect-mural div{
@@ -205,6 +211,10 @@ main .main-input .search-icon{
 }
 
 /***** Seccion Articulos 2/1 *****/
+
+.div-articulos {
+    margin-left: 10px;
+}
 
 .div-articlesPromocionales{
     display: flex;
@@ -641,6 +651,7 @@ footer{
     .icon-user-buy{
         width: 10vw;
         justify-content: flex-end;
+        gap: 10px
     }
 
     /****** Main ******/
@@ -716,6 +727,7 @@ footer{
     }
 
     .aside-lista select{
+        width: 80%;
         outline: none;
         border: 0;
         background: transparent;
@@ -774,7 +786,8 @@ footer{
 
     .div-atencion-ayuda{
         display: flex;
-        gap: 10px;
+        justify-content: space-between;
+        padding: 0;
     }
 
     /****** Footer ******/
