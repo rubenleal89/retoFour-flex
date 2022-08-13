@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bazar</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/e2d69b96e8.js" crossorigin="anonymous"></script>
   </head>
     
   <body>
     <header class="padding-separacion-movile padding-separacion-desktop">
       <section class="section-contacto displey-none-movile displey-flex-desktop">
         <figure class="figure-contacto">
-            <img src="img/phone.png" alt="Telefono"/>
+          <i class="fa-solid fa-phone"></i>
             <figcaption class="figcaption-contacto">+88012 3456 7895</figcaption>
         </figure>
 
         <figure class="figure-contacto">
-            <img src="img/message.png" alt="Mensajes" />
+          <i class="fa-solid fa-message"></i>
             <figcaption class="figcaption-contacto">support@ui-lib.com</figcaption>
         </figure>
       </section>
@@ -76,21 +77,20 @@
             </div>
         </div>
         <div class="icon-user-buy displey-none-movile displey-flex-desktop">
-          <a href="#"><img src="img/icon-usuario.png" alt="Usuario"></a>
-          <a href="#"><img src="img/icon-compra.png" alt="Comprar"></a>
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
 
         <nav class="nav-menu">
           <input type="checkbox" id="check">
-          <label for="check" class="checkbtn displey-none-desktop">
-            <img class="displey-none-desktop" src="img/icon-menu.png" alt="Menu">
+          <label for="check" class="checkbtn open-menu displey-none-desktop">
+            <i class="fa-solid fa-bars"></i>
           </label>
 
               <ul class="nav-ul-select">
-                <li>
-                  <input type="checkbox" id="check">
+                <li id="close-menu">
                   <label for="check" class="checkbtn displey-none-desktop">
-                    <img class="displey-none-desktop" src="img/icon-cerrar-menu.png" alt="Menu">
+                    <i class="fa-solid fa-xmark"></i>
                   </label>
                 </li>
                 <li class="li-icons">
@@ -138,7 +138,7 @@
 
       <section class="select-nav-descktop displey-none-movile displey-flex-desktop padding-separacion-movile padding-separacion-desktop">
           <div class="div-categoria displey-flex-desktop">
-            <img src="img/icon-Categoria.png" alt="cuadrado">
+            <i class="fa-solid fa-bars"></i>
             <select class="select-nav-categoria">
               <option value="Categorias">Categorias</option>
             </select>
@@ -194,77 +194,77 @@
               Categories
             </li>
             <li>
-              <img src="img/icon-home.png" alt="">
+              <i class="fa-solid fa-house aside-icons"></i>
               <a href="#">Home</a>
             </li>
             <li>
-              <img src="img/icon-popularProducts.png" alt="">
+              <i class="fa-solid fa-code-compare aside-icons"></i>
               <a href="#">Popular Products</a>
             </li>
             <li>
-              <img src="img/icon-treding.png" alt="">
+              <i class="fa-solid fa-arrow-up-right-dots aside-icons"></i>
               <a href="#">Trending Products</a>
             </li>
             <li>
-              <img src="img/icon-allProducts.png" alt="">
+              <i class="fa-solid fa-list-check aside-icons"></i>
               <a href="#">All Products</a>
             </li>
             <li>
-              <img src="img/icon-healthBeauty.png" alt="">
+              <i class="fa-solid fa-spray-can-sparkles aside-icons"></i>
               <select>
                 <option value="Health and beauty">Health and beauty</option>
               </select>
             </li>
             <li>
-              <img src="img/icon-mascara.png" alt="">
+              <i class="fa-solid fa-person-dress aside-icons"></i>
               <select>
                 <option value="Mascara">Mascara</option>
               </select>
             </li>
             <li>
-              <img src="img/icon-powder.png" alt="">
+              <i class="fa-solid fa-person-pregnant aside-icons"></i>
               <select>
                 <option value="Powder">Powder</option>
               </select>
             </li>
             <li>
-              <img src="img/icon-lotion.png" alt="">
+              <i class="fa-solid fa-spray-can-sparkles aside-icons"></i>
               <select>
                 <option value="Lotion">Lotion</option>
               </select>
             </li>
             <li>
-              <img src="img/icon-makeup.png" alt="">
+              <i class="fa-solid fa-dolly aside-icons"></i>
               <select>
                 <option value="Makeup">Makeup</option>
               </select>
             </li>
             <li>
-              <img src="img/icon-lipstick.png" alt="">
+              <i class="fa-solid fa-bag-shopping aside-icons"></i>
               <select>
                 <option value="Lipstick">Lipstick</option>
               </select>
             </li>
             <li>
-              <img src="img/icon-faseMask.png" alt="">
+              <i class="fa-solid fa-mask-face aside-icons"></i>
               <select>
                 <option value="Face Mask">Face Mask</option>
               </select>
             </li>
             <li>
-              <img src="img/icon-digitalTermometro.png" alt="">
+              <i class="fa-solid fa-thermometer aside-icons"></i>
               <a href="#">Digital Thermometer</a>
             </li>
             <li>
-              <img src="img/icon-oxygenPump.png" alt="">
+              <i class="fa-solid fa-pump-medical aside-icons"></i>
               <a href="#">Oxygen Pump</a>
             </li>
             <li>
-              <img src="img/icon-lenseCaseKit.png" alt="">
+              <i class="fa-solid fa-camera aside-icons"></i>
               <a href="#">Lense Case Kit</a>
             </li>
             <li>
-              <img src="img/icon-automovite.png" alt="">
+              <i class="fa-solid fa-car-side aside-icons"></i>
               <a href="#">Automotive</a>
             </li>
           </ul>
@@ -277,16 +277,16 @@
                 <img src="img/icon-salud.png" alt="Salud">
                 <p>Our Pharmaciests are here to Help People</p>
               </div>
-              <img src="img/img-arti-promo-camioneta.jpg" alt="Enfermera">
+              <img class="img-arti-promocional" src="img/img-arti-promo-camioneta.jpg" alt="Camioneta">
             </article>
 
             <article class="arti-cremas">
               <div>
                 <p>BEAUTY PACK</p>
-                <p><strong>CREAM BRIGHT UP TO 25%</strong></p>
+                <p><strong>CREAM BRIGHT <br> UP TO 25%</strong></p>
                 <button>Shop Now</button>
               </div>
-              <img src="img/img-pack-camioneta.jpg" alt="Cremas">
+              <img class="img-arti-promocional" src="img/img-pack-camioneta.jpg" alt="Cremas">
             </article>
           </div>
 
@@ -304,35 +304,37 @@
 
             <div class="div-top-products">
               <article class="arti-productos ">
-                <h4>8% off</h4>
-                <figure>
+                <div class="arti-off-img">
+                  <span>8% off</span>
                   <img src="img/img-vichy-liftactiv.jpg" alt="Jepp Roja">
-                  <figcaption>Vichy Liftactiv Nuit </figcaption>
-                </figure>
-                <img class="flechaL" src="img/icon-flechaL.png" alt="flecha">
-                <div class="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <p>(5.0)</p>
                 </div>
-                <p class="precio-venta">$173.88</p>
-                <p class="precio-tachado"><del>189.00</del></p>
-                <div class="div-button">
-                  <button class="button-add">+ Add To Cart</button>
-                  <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+                <div class="arti-name-rating">
+                  <p>Vichy Liftactiv Nuit </p>
+                  <img class="flechaL" src="img/icon-flechaL.png" alt="flecha">
+                  <div class="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <p>(5.0)</p>
+                  </div>
+                  <p class="precio-venta">$173.88</p>
+                  <p class="precio-tachado"><del>189.00</del></p>
+                  <div class="div-button">
+                    <button class="button-add">+ Add To Cart</button>
+                    <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+                  </div>
                 </div>
               </article>
       
               <article class="arti-productos producto2  displey-none-movile">
-                <div>
-                  <h4>9% off</h4>
-                  <figure>
-                    <img src="img/img-blue-stethoscope.jpg" alt="Jepp Blue">
-                    <figcaption>Blue Stethoscope</figcaption>
-                  </figure>
+                <div class="arti-off-img">
+                  <span>9% off</span>
+                  <img src="img/img-blue-stethoscope.jpg" alt="Jepp Blue">
+                </div>
+                <div class="arti-name-rating">
+                  <p>Blue Stethoscope</p>
                   <div class="rating">
                     <img src="img/icon-estrella.png" alt="rating">
                     <img src="img/icon-estrella.png" alt="rating">
@@ -351,25 +353,27 @@
               </article>
       
               <article class="arti-productos ">
-                <h4>12% off</h4>
-                <figure>
+                <div class="arti-off-img">
+                  <span>12% off</span>
                   <img src="img/img-SphygmomanometerAUT.jpg" alt="Sphygmomanometer">
-                  <figcaption>Sphygmomanometer</figcaption>
-                </figure>
-                <img class="flechaR" src="img/icon-flechaR.png" alt="FlechaR">
-                <div class="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella-gris.png" alt="rating-gris">
-                  <img src="img/icon-estrella-gris.png" alt="rating-gris">
-                  <p>(3.0)</p>
                 </div>
-                <p class="precio-venta">$63.36</p>
-                <p class="precio-tachado"><del>72.00</del></p>
-                <div class="div-button">
-                  <button class="button-add">+ Add To Cart</button>
-                  <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+                <div class="arti-name-rating">
+                  <p>Sphygmomanometer</p>
+                  <img class="flechaR" src="img/icon-flechaR.png" alt="FlechaR">
+                  <div class="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella-gris.png" alt="rating-gris">
+                    <img src="img/icon-estrella-gris.png" alt="rating-gris">
+                    <p>(3.0)</p>
+                  </div>
+                  <p class="precio-venta">$63.36</p>
+                  <p class="precio-tachado"><del>72.00</del></p>
+                  <div class="div-button">
+                    <button class="button-add">+ Add To Cart</button>
+                    <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+                  </div>
                 </div>
               </article>
             </div>
@@ -386,90 +390,98 @@
 
             <div class="div-all-products">
               <article class="arti-productos arti-productos-movile ">
-                <h4>8% off</h4>
-                <figure>
+                <div class="arti-off-img">
+                  <span>8% off</span>
                   <img src="img/img-vichy-liftactivII.jpg" alt="Antiguo">
-                  <figcaption>Vichy Liftactiv Nuit</figcaption>
-                </figure>
-                <div class="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <p>(5.0)</p>
                 </div>
-                <p class="precio-venta">$211.60</p>
-                <p class="precio-tachado"><del>230.00</del></p>
-                <div class="div-button">
-                  <button class="button-add">+ Add To Cart</button>
-                  <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+                <div class="arti-name-rating">
+                  <p>Vichy Liftactiv Nuit</p>
+                  <div class="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <p>(5.0)</p>
+                  </div>
+                  <p class="precio-venta">$211.60</p>
+                  <p class="precio-tachado"><del>230.00</del></p>
+                  <div class="div-button">
+                    <button class="button-add">+ Add To Cart</button>
+                    <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+                  </div>
                 </div>
               </article>
       
               <article class="arti-productos arti-productos-movile ">
-                <h4>6% off</h4>
-                <figure>
+                <div class="arti-off-img">
+                  <span>6% off</span>
                   <img src="img/img-sphygmomano.jpg" alt="Choque">
-                  <figcaption>Sphygmomanometer</figcaption>
-                </figure>
-                <div class="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <p>(5.0)</p>
                 </div>
-                <p class="precio-venta">$61.10</p>
-                <p class="precio-tachado"><del>65.00</del></p>
-                <div class="div-button">
-                  <button class="button-add">+ Add To Cart</button>
-                  <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+                <div class="arti-name-rating">
+                  <p>Sphygmomanometer</p>
+                  <div class="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <p>(5.0)</p>
+                  </div>
+                  <p class="precio-venta">$61.10</p>
+                  <p class="precio-tachado"><del>65.00</del></p>
+                  <div class="div-button">
+                    <button class="button-add">+ Add To Cart</button>
+                    <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+                  </div>
                 </div>
               </article>
       
               <article class="arti-productos arti-productos-movile ">
-                <h4>11% off</h4>
-                <figure>
+                <div class="arti-off-img">
+                  <span>11% off</span>
                   <img src="img/img-fresh-strawberry.jpg" alt="Fresh Strawberry">
-                  <figcaption>Fresh Strawberry</figcaption>
-                </figure>
-                <div class="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella-gris.png" alt="rating-gris">
-                  <img src="img/icon-estrella-gris.png" alt="rating-gris">
-                  <p>(3.0)</p>
                 </div>
-                <p class="precio-venta">$161.09</p>
-                <p class="precio-tachado"><del>181.00</del></p>
-                <div class="div-button">
-                  <button class="button-add">+ Add To Cart</button>
-                  <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+                <div class="arti-name-rating">
+                  <p>Fresh Strawberry</p>
+                  <div class="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella-gris.png" alt="rating-gris">
+                    <img src="img/icon-estrella-gris.png" alt="rating-gris">
+                    <p>(3.0)</p>
+                  </div>
+                  <p class="precio-venta">$161.09</p>
+                  <p class="precio-tachado"><del>181.00</del></p>
+                  <div class="div-button">
+                    <button class="button-add">+ Add To Cart</button>
+                    <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+                  </div>
                 </div>
               </article>
 
               <article class="arti-productos arti-productos-movile displey-none-desktop ">
-                <h4>11% off</h4>
-                <figure>
+                <div class="arti-off-img">
+                  <span>11% off</span>
                   <img src="img/img-ford.jpg" alt="Ford">
-                  <figcaption>Fresh Strawberry</figcaption>
-                </figure>
-                <div class="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella.png" alt="rating">
-                  <img src="img/icon-estrella-gris.png" alt="rating-gris">
-                  <p>(4.0)</p>
                 </div>
-                <p class="precio-venta">$187.09</p>
-                <p class="precio-tachado"><del>211.00</del></p>
-                <div class="div-button">
-                  <button class="button-add">+ Add To Cart</button>
-                  <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+                <div class="arti-name-rating">
+                  <p>Fresh Strawberry</p>
+                  <div class="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella.png" alt="rating">
+                    <img src="img/icon-estrella-gris.png" alt="rating-gris">
+                    <p>(4.0)</p>
+                  </div>
+                  <p class="precio-venta">$187.09</p>
+                  <p class="precio-tachado"><del>211.00</del></p>
+                  <div class="div-button">
+                    <button class="button-add">+ Add To Cart</button>
+                    <button class="button-corazon"><img src="img/icon-corazon.png" alt=""></button>
+                  </div>
                 </div>
               </article>
             </div>
@@ -532,11 +544,11 @@
         <li><a href="#">Corporate & Bulk Purchasing</a></li>
         <li><a href="#">Returns & Refunds</a></li>
       </ul>
-        <a href="#"><img src="img/icon-facebook.png" alt="Facebook"></a>
-        <a href="#"><img src="img/icon-twiter.png" alt="Twiter"></a>
-        <a href="#"><img src="img/icon-youtube.png" alt="Youtube"></a>
-        <a href="#"><img src="img/icon-google.png" alt="Google"></a>
-        <a href="#"><img src="img/icon-instagram.png" alt="Instagram"></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-google"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
     </section>
   </footer>
   </body>

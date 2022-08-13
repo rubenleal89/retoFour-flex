@@ -89,6 +89,10 @@ main{
     width: 20vw;
 }
 
+.main-input{
+    margin-right: 10px;
+}
+
 main .main-input-container{
     width: 80vw;
     border-radius: 100px;
@@ -124,10 +128,16 @@ main .main-input .search-icon{
     border: 1px solid #3C74C2;
 }
 
-.icon-menu{
+/* .fa-bars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
-}
+    border: 1px solid #EEF1F3;
+    border-radius: 100px;
+    color: #757575;
+} */
 
 /***** Menu Hambrguesa *****/
 
@@ -135,8 +145,28 @@ main .main-input .search-icon{
     cursor: pointer;
 }
 
+.open-menu{
+    padding: 10px;
+    border: 1px solid #EEF1F3;
+    border-radius: 100px;
+    color: #757575;
+}
+
 .checkbtn img{
     width: 40px;
+}
+
+#close-menu{
+    text-align: end;
+    margin-right: 20px;
+}
+
+.fa-xmark{
+    color: white;
+    border-radius: 50px;
+    width: 40px;
+    background: red;
+    text-align: center;
 }
 
 .nav-menu ul{
@@ -200,8 +230,7 @@ main .main-input .search-icon{
 }
 
 .sect-mural button{
-    width: 100px;
-    height: 30px;
+    padding: 4% 6%;
     background: #4E97FD;
     color: white;
     border: 0;
@@ -212,22 +241,16 @@ main .main-input .search-icon{
 
 /***** Seccion Articulos 2/1 *****/
 
-.div-articulos {
-    margin-left: 10px;
-}
-
 .div-articlesPromocionales{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin: 10px 0;
+    margin: 10px;
 }
 
 .arti-enfermera{
     width: 100%;
-    height: 216px;
-    max-width: 500px;
     background-color: white;
     border: 2px solid #F8F8F9;
     border-radius: 20px;
@@ -236,41 +259,44 @@ main .main-input .search-icon{
 
 .arti-enfermera div{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #B8DEFE;
     border-radius: 20px 100px 100px 20px;
     text-align: center;
     padding: 0 15px;
 }
 
-.arti-enfermera img{
-    width: 50%;
-    max-width: 180px;
+.arti-enfermera div p{
+    width: 60%;
+}
+
+.img-arti-promocional{
+    width: 30%;
+    max-width: 200px;
     margin: auto;
 }
 
 .arti-enfermera div img{
     width: 40px;
     height: 40px;
-    margin-top: 30%;
 }
 
 .arti-cremas{
     width: 100%;
-    height: 216px;
-    max-width: 500px;
     background-color: white;
     border: 2px solid #F8F8F9;
     border-radius: 20px;
     display: flex;
 }
 
-.arti-cremas img{
-    width: 60%;
-    margin: auto;
-}
 
 .arti-cremas div{
-    margin: auto 20px;
+    width: 50%;
+    margin: auto 0;
+    padding-left: 20px;
     line-height: 25px;
 }
 
@@ -290,8 +316,7 @@ main .main-input .search-icon{
     display: flex;
     justify-content: space-between;
     align-content: center;
-    padding: 0 10px;
-    margin: 20px 0;
+    margin: 20px;
 }
 
 .div-top-all-products div p{
@@ -300,7 +325,6 @@ main .main-input .search-icon{
 
 .div-top-all-products select{
     width: 100px;
-    height: 60px;
     outline: none;
     border: 0;
     background-color: transparent;
@@ -309,7 +333,8 @@ main .main-input .search-icon{
 .div-top-products{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 0 20px;
 }
 
 .arti-productos{
@@ -317,14 +342,12 @@ main .main-input .search-icon{
     background-color: white;
     border: 2px solid #F9F9FB;
     width: 45%;
-    max-width: 240px;
-    height: 430px;
+    /* max-width: 300px; */
     border-radius: 10px;
-    padding: 15px;
     margin: 10px 0;
 }
 
-.arti-productos h4{
+.arti-productos span{
     background-color: #4E97FD;
     width: 50px;
     padding: 5px;
@@ -337,14 +360,19 @@ main .main-input .search-icon{
     text-align: center;
 }
 
-.arti-productos figure img{
-    width: 165px;
-    height: 165px;
+.arti-off-img{
+    padding-top: 20px;
+}
+
+.arti-off-img img{
+    width: 100%;
+    /* height: 165px; */
     margin: 45px 0;
 }
 
-.arti-productos figure figcaption{
-    width: 100%;
+.arti-name-rating{
+    padding: 15px;
+    border-top: 1px solid #E4EAEF;
 }
 
 .rating img{
@@ -389,11 +417,11 @@ main .main-input .search-icon{
     margin-right: 10px;
 }
 
-.arti-productos figure figcaption{
+/* .arti-productos figure figcaption{
     border-top: 1px solid black;
     padding-top: 10px;
     text-align: left;
-}
+} */
 
 .flechaL{
     position: absolute;
@@ -411,13 +439,14 @@ main .main-input .search-icon{
 
 .div-all-products{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 20px;
     align-items: center
 }
 
 .arti-productos-movile{
     width: 100%;
-    max-width: 550px;
+    /* max-width: 550px; */
 }
 
 .arti-productos-movile figure img{
@@ -443,7 +472,7 @@ main .main-input .search-icon{
 
 .sect-atencionCliente{
     width: 100%;
-    max-width: 800px;
+    /* max-width: 800px; */
     padding: 20px;
     border: 2px solid #F9F9FB;
     border-radius: 10px;
@@ -455,7 +484,7 @@ main .main-input .search-icon{
 }
 
 .div-atencion-ayuda{
-    padding: 0 20px;
+    margin: 0 10px;
 }
 
 .sect-atencionCliente h3{
@@ -465,7 +494,7 @@ main .main-input .search-icon{
 .sect-atencionCliente img{
     width: 55px;
     height: 55px;
-    margin: 5px;
+    margin-right: 10px;
 }
 
 /********************** Footer **********************/
@@ -493,7 +522,7 @@ footer{
     margin-top: 10px;
 }
 
-.sect-listaIcon img{
+.sect-listaIcon a i{
     width: 30px;
     height: 30px;
     margin-top: 15px;
@@ -546,29 +575,42 @@ footer{
     }
 
     .sect-mural img{
-        width: 40%;
+        /* width: 40%; */
+        width: 275px;
     }
 
     /***** Seccion Articulos 2/1 *****/
 
     .arti-enfermera{
-        width: 46%;
+        width: 49%;
+    }
+
+    .arti-enfermera div{
+        padding: 15px;
     }
 
     .arti-cremas{
-        width: 46%;
+        width: 49%;
+    }
+
+    .img-arti-promocional{
+        width: 45%;
     }
 
     /***** Seccion Articulos 2/2 *****/
 
     .div-all-products{
-        flex-direction: row;
-        flex-wrap: wrap;
+        /* flex-direction: row;
+        flex-wrap: wrap; */
+        justify-content: space-between;
+    }
+
+    .arti-productos{
+        width: 33%;
     }
 
     .arti-productos-movile{
         width: 45%;
-        margin: 5px auto;
     }
 
     .producto2{
@@ -643,15 +685,10 @@ footer{
         margin-left: 10px;
     }
 
-    .icon-user-buy img{
-        width: 30px;
-        height: 30px;
-    }
-
     .icon-user-buy{
         width: 10vw;
         justify-content: flex-end;
-        gap: 10px
+        gap: 20px
     }
 
     /****** Main ******/
@@ -684,11 +721,6 @@ footer{
         background-color: transparent;
     }
 
-    .div-categoria img{
-        width: 25px;
-        height: 25px;
-    }
-
     .div-categoria{
         width: 190px;
         background-color: #F6F9FC;
@@ -707,18 +739,23 @@ footer{
     /***** Aside *****/
 
     .aside-lista{
+        width: 25%;
         margin-top: 10px;
         /* padding-left: 100px; */
     }
 
-    .aside-lista ul li img{
+    .aside-icons{
         width: 20px;
         margin: 0 10px;
     }
 
+    .aside-categorias{
+        width: 100%;
+    }
+
     .aside-categorias li{
-        width: 250px;
-        height: 35px;
+        width: 100%;
+        height: 2%;
         background-color: #F3f5f9;
         display: flex;
         border-radius: 5px;
@@ -735,7 +772,6 @@ footer{
     }
 
     .aside-lista ul li a{
-        margin: auto 0;
         color: black;
     }
 
@@ -750,17 +786,21 @@ footer{
 
     /****** Articulos ******/
 
+    .div-articulos {
+        width: 75%;
+        margin-left: 20px;
+    }
+
+    .arti-enfermera div p{
+        width: 100%;
+    }
+
     .div-top-products{
         justify-content: space-between;
-        margin: 0 10px;
     }
 
     .div-all-products{
         justify-content: space-between;
-    }
-
-    .arti-productos{
-        margin: 0;
     }
 
     .div-articlesPromocionales{
@@ -769,12 +809,11 @@ footer{
 
     .arti-productos{
         width: 33%;
-        max-width: 240px;
-        height: 430px;
+        max-width: 270px;
     }
 
     .arti-productos figure img{
-        width: 170px;
+        /* width: 170px; */
         height: 170px;
         margin: 45px 0;
     }
